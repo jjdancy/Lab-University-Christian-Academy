@@ -1,32 +1,43 @@
 export default function HeroSection() {
   return (
     <section
-      className="relative overflow-hidden border-b border-white/10 bg-gradient-to-b from-black via-black to-zinc-950"
+      className="relative overflow-hidden border-b border-white/10 bg-black"
       aria-labelledby="hero-heading"
     >
+      {/* Background video + gradient overlay */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.08),_transparent_60%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_0%_100%,_rgba(250,204,21,0.12),_transparent_55%),radial-gradient(circle_at_100%_0,_rgba(250,204,21,0.08),_transparent_60%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,_rgba(0,0,0,0.4),_rgba(0,0,0,0.9))]" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black via-black/60 to-transparent" />
+        <div className="absolute inset-0 overflow-hidden">
+          <video
+            className="h-full w-full object-cover object-[20%_40%]"
+            src="/videos/in%20school%20vid.mov"
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+        </div>
+        {/* Soft global darkening for readability */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,0,0,0.18),_transparent_75%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,_rgba(0,0,0,0.55),_rgba(0,0,0,0.85))]" />
+        {/* Stronger dark gradient behind text (left side) */}
+        <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-black/90 via-black/70 to-transparent" />
       </div>
 
-      <div className="relative mx-auto flex max-w-6xl flex-col gap-12 px-4 pb-20 pt-20 md:flex-row md:items-center md:gap-20 md:px-6 md:pb-28 md:pt-28">
-        <div className="flex-1 space-y-8">
+      <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 pb-16 pt-20 md:flex-row md:items-center md:gap-14 md:px-6 md:pb-20 md:pt-24">
+        <div className="flex-1 space-y-5">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-yellow-300/90">
-            Faith • Excellence • Preparation
+            Learn • Believe • Achieve
           </p>
+          <div className="inline-flex items-center rounded-full border border-yellow-400/80 bg-black/60 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-yellow-200 shadow-md shadow-black/40">
+            Now enrolling for 2026–27 school year
+          </div>
           <h1
             id="hero-heading"
-            className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
+            className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-6xl"
           >
-            Forming{" "}
-            <span className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 bg-clip-text text-transparent">
-              Christ-centered
-            </span>{" "}
-            student-athletes for{" "}
+            A Christ-centered academy for{" "}
             <span className="bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">
-              college and beyond
+              elite student-athletes
             </span>
             .
           </h1>
@@ -40,84 +51,57 @@ export default function HeroSection() {
 
           <div className="flex flex-wrap items-center gap-4">
             <a
-              href="#apply"
+              href="/admissions#apply"
               className="rounded-full bg-yellow-400 px-7 py-3 text-xs font-semibold uppercase tracking-[0.28em] text-black shadow-lg shadow-yellow-500/30 transition-transform hover:-translate-y-0.5 hover:bg-yellow-300"
             >
               Apply Now
             </a>
             <a
-              href="#tour"
+              href="/admissions#tour"
               className="rounded-full border border-white/25 px-7 py-3 text-xs font-semibold uppercase tracking-[0.28em] text-white/85 transition-colors hover:border-yellow-400 hover:text-yellow-300"
             >
               Schedule a Tour
             </a>
-            <span className="text-xs text-white/55">
-              Limited enrollment for 2026–27
-            </span>
           </div>
 
-          <div className="mt-6 flex flex-wrap items-center gap-6 text-xs text-white/60">
-            <div>
-              <div className="font-semibold text-white">
-                5.0 ★ Google Reviews
+          <div className="mt-6 flex flex-wrap items-center gap-4 text-xs text-white/80">
+            {/* K–12 badge */}
+            <div className="inline-flex items-center gap-3 rounded-2xl border border-white/25 bg-black/55 px-4 py-2 shadow-md shadow-black/40">
+              <div className="relative flex h-9 w-9 items-center justify-center rounded-xl border border-yellow-300/80 bg-black/40">
+                {/* Open book icon: two pages */}
+                <div className="flex h-5 w-6 items-stretch gap-0.5">
+                  <div className="h-full w-1/2 rounded-sm bg-yellow-300/90" />
+                  <div className="h-full w-1/2 rounded-sm bg-yellow-200/90" />
+                </div>
               </div>
-              <div className="text-[0.7rem] uppercase tracking-[0.25em] text-white/50">
-                Trusted by Charlotte families
+              <div className="flex flex-col items-start leading-tight">
+                <span className="text-sm font-semibold text-white">
+                  K–12
+                </span>
+                <span className="text-[0.7rem] uppercase tracking-[0.22em] text-white/70">
+                  All grade levels
+                </span>
               </div>
             </div>
-            <div className="hidden h-10 w-px bg-white/10 sm:block" />
-            <div>
-              <div className="font-semibold text-white">
-                Structured Daily Preparation
-              </div>
-              <div className="text-[0.7rem] uppercase tracking-[0.25em] text-white/50">
-                Academics 8:00–1:00 • Training 12:30–3:00
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div className="flex-1">
-          <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl border border-white/12 bg-gradient-to-br from-zinc-900 via-zinc-950 to-black shadow-2xl shadow-black/70">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_0,_rgba(250,204,21,0.18),transparent_55%),radial-gradient(circle_at_80%_100%,_rgba(250,204,21,0.12),transparent_55%)]" />
-            <div className="absolute inset-0 bg-[linear-gradient(to_bottom,_transparent,_rgba(0,0,0,0.4)_40%,_rgba(0,0,0,0.9)_100%)]" />
-
-            <div className="relative flex h-full flex-col justify-between p-6">
-              <div className="space-y-2 text-right text-[0.7rem] text-white/75">
-                <p className="font-semibold tracking-[0.25em] text-yellow-300">
-                  LAB U BASKETBALL
-                </p>
-                <p>National & Regional Teams • Varsity Boys</p>
+            {/* Reviews badge */}
+            <div className="inline-flex items-center gap-3 rounded-2xl border border-white/25 bg-black/55 px-4 py-2 shadow-md shadow-black/40">
+              <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-yellow-300 text-yellow-300">
+                <span className="text-base">★</span>
               </div>
-
-              <div className="space-y-4">
-                <div className="flex items-center justify-between text-[0.7rem] text-white/65">
-                  <span className="uppercase tracking-[0.25em]">
-                    Academic Block
-                  </span>
-                  <span>8:00 AM – 1:00 PM</span>
-                </div>
-                <div className="flex items-center justify-between text-[0.7rem] text-white/65">
-                  <span className="uppercase tracking-[0.25em]">
-                    Training Block
-                  </span>
-                  <span>12:30 PM – 3:00 PM</span>
-                </div>
-                <div className="mt-2 rounded-2xl border border-yellow-400/45 bg-black/50 p-4">
-                  <p className="text-[0.7rem] font-semibold uppercase tracking-[0.25em] text-yellow-300">
-                    Designed for Student-Athletes
-                  </p>
-                  <p className="mt-2 text-xs text-white/75">
-                    Morning Acellus coursework with instructor oversight.
-                    Afternoon electives, performance training, and elite
-                    basketball development—within a disciplined, faith-first
-                    culture.
-                  </p>
-                </div>
+              <div className="flex flex-col items-start leading-tight">
+                <span className="text-sm font-semibold text-white">
+                  5.0
+                </span>
+                <span className="text-[0.7rem] uppercase tracking-[0.22em] text-white/70">
+                  Google reviews
+                </span>
               </div>
             </div>
           </div>
         </div>
+
+        <div className="flex-1" />
       </div>
     </section>
   );
