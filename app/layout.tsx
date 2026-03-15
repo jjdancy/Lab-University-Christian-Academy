@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import PageAnimation from "@/components/PageAnimation";
 
 export const metadata: Metadata = {
   title: "LAB University Christian Academy",
   description:
-    "Christ-centered K–12 private academy in Charlotte, NC uniting academic excellence with elite basketball development."
+    "Christ-centered K–12 private academy in Charlotte, NC—academic excellence, optional elite basketball, and college prep for scholars, leaders, and athletes."
 };
 
 export default function RootLayout({
@@ -14,7 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white antialiased">{children}</body>
+      <body className="bg-black text-white antialiased">
+        <PageAnimation>{children}</PageAnimation>
+      </body>
     </html>
   );
 }
