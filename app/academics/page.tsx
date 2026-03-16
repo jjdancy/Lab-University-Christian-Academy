@@ -80,7 +80,7 @@ export default function AcademicsPage() {
                   },
                   {
                     title: "In-Person Support",
-                    text: "Daily instructor oversight, tutors, and mentors so students stay on track. Progress is monitored; no one falls through the cracks."
+                    text: "Daily teacher-led instruction, tutors, and mentors so students stay on track. Teachers lead discussions and track progress; no one falls through the cracks."
                   },
                   {
                     title: "Built for Balance",
@@ -114,26 +114,34 @@ export default function AcademicsPage() {
                   <h2 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
                     A predictable rhythm for learning and growth.
                   </h2>
-                  <div className="space-y-4">
-                    <div className="rounded-xl border border-yellow-500/30 bg-zinc-950/80 px-5 py-4">
-                      <dt className="text-sm font-semibold text-yellow-300">
-                        8:00 AM – 1:00 PM
-                      </dt>
-                      <dd className="mt-1 text-sm text-white/80">
-                        Core academic coursework through Acellus with instructor
-                        oversight. Math, science, English, social studies, STEM.
-                      </dd>
-                    </div>
-                    <div className="rounded-xl border border-white/10 bg-zinc-950/80 px-5 py-4">
-                      <dt className="text-sm font-semibold text-white">
-                        12:30 PM – 3:00 PM
-                      </dt>
-                      <dd className="mt-1 text-sm text-white/80">
-                        Electives, innovation labs, and athletic development.
-                        Students transition from classroom to court or
-                        specialty programming.
-                      </dd>
-                    </div>
+                  <div className="space-y-2">
+                    {[
+                      { time: "8:00 – 8:50 AM", label: "Period 1", subject: "English" },
+                      { time: "8:50 – 9:40 AM", label: "Period 2", subject: "Math" },
+                      { time: "9:40 – 10:00 AM", label: "Break", subject: "" },
+                      { time: "10:00 – 10:50 AM", label: "Period 3", subject: "Science" },
+                      { time: "10:50 – 11:40 AM", label: "Period 4", subject: "Social Studies" },
+                      { time: "11:40 AM – 12:30 PM", label: "Lunch", subject: "" },
+                      { time: "12:30 – 1:20 PM", label: "Period 5", subject: "PE" },
+                      { time: "1:30 – 3:00 PM", label: "Electives", subject: "" },
+                    ].map((block) => (
+                      <div
+                        key={block.time}
+                        className={`flex items-center justify-between gap-4 rounded-xl border px-4 py-3 ${
+                          block.label === "Break" || block.label === "Lunch"
+                            ? "border-white/10 bg-zinc-900/80"
+                            : "border-yellow-500/30 bg-zinc-950/80"
+                        }`}
+                      >
+                        <span className="text-sm font-medium text-white/90 tabular-nums">
+                          {block.time}
+                        </span>
+                        <span className="text-sm font-semibold text-yellow-200/95">
+                          {block.label}
+                          {block.subject ? ` · ${block.subject}` : ""}
+                        </span>
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10">
@@ -172,8 +180,8 @@ export default function AcademicsPage() {
                   <p className="text-sm leading-relaxed text-white/85">
                     Video-based instruction, assessments, and progress tracking
                     let students work through accredited coursework at a pace
-                    that fits their schedule. LAB U faculty monitor performance,
-                    mastery, and pacing so every student remains accountable.
+                    that fits their schedule. LAB U teachers lead instruction, hold
+                    discussions, and track performance, mastery, and pacing so every student remains accountable.
                   </p>
                   <ul className="space-y-2 text-sm text-white/75">
                     <li className="flex items-center gap-2">
@@ -190,16 +198,25 @@ export default function AcademicsPage() {
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="h-1.5 w-1.5 rounded-full bg-yellow-400" />
-                      Strong progress monitoring
+                      Teacher-led instruction and progress tracking
                     </li>
                   </ul>
                   <p className="pt-2 text-sm leading-relaxed text-white/80">
                     The platform gives students the ability to maintain demanding
                     training and competition schedules without sacrificing
-                    academic progress. In-person instructors, tutors, and
-                    mentors ensure lesson completion, study habits, and academic
+                    academic progress. In-person teachers hold discussions and
+                    lead instruction; tutors and mentors ensure lesson completion, study habits, and academic
                     integrity every day.
                   </p>
+                  <a
+                    href="https://www.acellusacademy.com/online-high-school/#hscourses"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-yellow-300 underline-offset-4 hover:text-yellow-200 hover:underline"
+                  >
+                    Learn more about Acellus courses
+                    <span className="text-yellow-400/80" aria-hidden>→</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -216,8 +233,8 @@ export default function AcademicsPage() {
               </h2>
               <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/80">
                 A rigorous K–12 curriculum aligned with college-preparatory
-                expectations. On-site instructors and tutors monitor progress so
-                every student is ready for the next level.
+                expectations. On-site teachers and tutors lead instruction, hold discussions, and track progress so
+                    every student is ready for the next level.
               </p>
 
               <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -270,14 +287,14 @@ export default function AcademicsPage() {
 
               <div className="mt-10 border-t border-white/10 pt-10">
                 <h3 className="text-lg font-semibold text-white">
-                  Instructors, tutors, and mentors every step of the way
+                  Teachers, tutors, and mentors every step of the way
                 </h3>
                 <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/80">
                   Although the curriculum is delivered through Acellus, LAB U
                   provides in-person academic support and supervision. Students
-                  receive help from academic instructors, tutors, mentors, and
-                  learning advisors who monitor lesson completion, performance,
-                  and study habits—so students remain accountable and successful.
+                  receive help from teachers, tutors, mentors, and
+                  learning advisors who lead instruction, hold discussions, support lesson completion, and
+                  track performance and study habits—so students remain accountable and successful.
                 </p>
               </div>
             </div>

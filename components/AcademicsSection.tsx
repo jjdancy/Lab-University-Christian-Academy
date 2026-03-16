@@ -60,7 +60,7 @@ export default function AcademicsSection() {
             </h3>
             <p className="mt-2 text-xs text-white/70">
               A rigorous K–12 curriculum aligned with college-prep expectations
-              and monitored by on-site instructors, mentors, and tutors.
+              and led by on-site teachers, mentors, and tutors.
             </p>
             <ul className="mt-4 grid grid-cols-2 gap-2 text-xs text-white/70">
               <li className="rounded-full border border-white/10 px-3 py-1">

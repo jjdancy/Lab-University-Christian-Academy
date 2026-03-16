@@ -28,9 +28,25 @@ export default function HeroSection() {
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-yellow-300/90">
             Learn • Believe • Achieve
           </p>
-          <div className="inline-flex items-center rounded-full border border-yellow-400/80 bg-black/60 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-yellow-200 shadow-md shadow-black/40">
-            Now enrolling for 2026–27 school year
-          </div>
+
+          {/* NC Opportunity Scholarship — highly visible for parents */}
+          <a
+            href="https://k12.ncseaa.edu/opportunity-scholarship/how-to-apply/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col gap-1 rounded-xl border-2 border-yellow-400 bg-yellow-400/15 px-5 py-3 shadow-lg shadow-yellow-500/20 ring-2 ring-yellow-400/30 transition-all hover:bg-yellow-400/25 hover:ring-yellow-400/50"
+          >
+            <span className="text-sm font-bold uppercase tracking-wide text-yellow-300">
+              NC Opportunity Scholarship
+            </span>
+            <span className="text-xs font-medium text-white/90">
+              Funding may be available for eligible North Carolina families.{" "}
+              <span className="inline-flex items-center gap-1 font-semibold text-yellow-300 underline decoration-yellow-400/80 underline-offset-2 group-hover:text-yellow-200">
+                How to apply →
+              </span>
+            </span>
+          </a>
+
           <h1
             id="hero-heading"
             className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-6xl"
@@ -97,6 +113,10 @@ export default function HeroSection() {
                   Google reviews
                 </span>
               </div>
+            </div>
+
+            <div className="inline-flex items-center rounded-full border border-yellow-400/80 bg-black/60 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-yellow-200 shadow-md shadow-black/40">
+              Now enrolling for 2026–27 school year
             </div>
           </div>
         </div>

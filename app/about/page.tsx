@@ -13,11 +13,11 @@ export default function AboutPage() {
           <section className="relative border-b border-white/10 overflow-hidden bg-black py-16 md:py-24">
             <div className="absolute inset-0">
               <img
-                src="/images/little%20kids%20on%20field%20trip.jpeg"
-                alt="LAB U students"
-                className="h-full w-full object-cover object-center opacity-30"
+                src="/images/all%20teams.jpeg"
+                alt="LAB U all teams"
+                className="h-full w-full object-cover object-center"
               />
-              <div className="absolute inset-0 bg-black/70" />
+              <div className="absolute inset-0 bg-black/80" />
             </div>
             <div className="relative mx-auto max-w-5xl px-4 md:px-6">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-yellow-400/90">

@@ -41,3 +41,12 @@ body {
   transform: translateY(0);
 }
 
+/* Hide scrollbar for carousel while keeping scroll */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+

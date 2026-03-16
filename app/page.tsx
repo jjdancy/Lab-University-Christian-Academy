@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import HomePromoVideo from "@/components/HomePromoVideo";
 import HomeAcademicsPreview from "@/components/HomeAcademicsPreview";
 import HomeAthleticsPreview from "@/components/HomeAthleticsPreview";
+import AthleteCommitmentsCarousel from "@/components/AthleteCommitmentsCarousel";
 import HomeFacilitiesPreview from "@/components/HomeFacilitiesPreview";
 import HomeLeadershipPreview from "@/components/HomeLeadershipPreview";
 import Footer from "@/components/Footer";
@@ -26,6 +27,13 @@ export default function Home() {
 
         <ScrollReveal delay={100}>
           <HomeAthleticsPreview />
+        </ScrollReveal>
+
+        <ScrollReveal delay={125}>
+          <AthleteCommitmentsCarousel
+            title="Where Preparation Meets Opportunity"
+            subtitle="Student-athletes who have committed to the next level. Built at LAB U."
+          />
         </ScrollReveal>
 
         <ScrollReveal delay={150}>

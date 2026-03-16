@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MountStaggerReveal from "@/components/MountStaggerReveal";
 import AdmissionsCTASection from "@/components/AdmissionsCTASection";
+import AthleteCommitmentsCarousel from "@/components/AthleteCommitmentsCarousel";
 
 export default function AthleticsPage() {
   return (
@@ -74,7 +75,7 @@ export default function AthleticsPage() {
             </div>
           </section>
 
-          {/* 3. National, Regional, Boys Varsity — with team images */}
+          {/* 3. National, Regional, Boys Varsity, Girls Varsity — with team images */}
           <section
             id="teams"
             className="border-b border-white/10 bg-black py-16 md:py-20"
@@ -84,13 +85,13 @@ export default function AthleticsPage() {
                 Our Teams
               </p>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-                National. Regional. Varsity.
+                National. Regional. Boys & Girls Varsity.
               </h2>
               <p className="mt-3 max-w-2xl text-sm text-white/75">
-                Three levels of competition and development—each with a
-                challenging schedule and clear path to growth.
+                Four teams—each with a challenging schedule and clear path to
+                growth.
               </p>
-              <div className="mt-10 grid gap-6 md:grid-cols-3">
+              <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                 {[
                   {
                     title: "National Team",
@@ -109,9 +110,16 @@ export default function AthleticsPage() {
                   {
                     title: "Boys Varsity",
                     image: "/images/varsity%20team.jpeg",
-                    alt: "LAB U Varsity Team",
+                    alt: "LAB U Boys Varsity",
                     desc: "Competes against top local and regional talent in the Charlotte area. Builds fundamentals, habits, and leadership while earning exposure at showcases.",
-                    label: "Varsity"
+                    label: "Boys Varsity"
+                  },
+                  {
+                    title: "Girls Varsity",
+                    image: "/images/Girls%20varsity.jpeg",
+                    alt: "LAB U Girls Varsity",
+                    desc: "Competes against top local and regional talent. Builds fundamentals, habits, and leadership while earning exposure at showcases.",
+                    label: "Girls Varsity"
                   }
                 ].map((team) => (
                   <div
@@ -142,6 +150,9 @@ export default function AthleticsPage() {
               </div>
             </div>
           </section>
+
+          {/* Athlete Commitments Carousel */}
+          <AthleteCommitmentsCarousel />
 
           {/* 4. Expect to see this — game footage (moved up) */}
           <section className="border-b border-white/10 bg-zinc-950 py-16 md:py-20">
