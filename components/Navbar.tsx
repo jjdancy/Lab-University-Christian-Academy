@@ -17,9 +17,7 @@ const navLinks = [
     items: [
       { label: "Basketball Program", href: "/athletics" },
       { label: "Teams", href: "/athletics#teams" },
-      { label: "Coaches", href: "/athletics#coaches" },
-      { label: "Training System", href: "/athletics#training" },
-      { label: "Facilities", href: "/facilities" }
+      { label: "Coaches", href: "/athletics#coaches" }
     ]
   },
   { label: "Facilities", href: "/facilities" },
@@ -29,7 +27,8 @@ const navLinks = [
     href: "/admissions",
     items: [
       { label: "Admissions Process", href: "/admissions#process" },
-      { label: "Tuition / Enrollment", href: "/admissions#tuition" },
+      { label: "Who It's For", href: "/admissions#who" },
+      { label: "FAQs", href: "/admissions#faqs" },
       { label: "Schedule a Tour", href: "/admissions#tour" },
       { label: "Apply Now", href: "/admissions#apply" }
     ]
