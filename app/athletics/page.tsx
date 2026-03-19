@@ -218,7 +218,7 @@ export default async function AthleticsPage() {
                     ariaLabel="LAB U highlight 2"
                   />
                 </div>
-                <div className="overflow-hidden rounded-xl bg-black">
+                <div className="hidden overflow-hidden rounded-xl bg-black sm:block">
                   <HeroBackgroundVideo
                     className="aspect-[9/16] w-full object-cover"
                     src="/videos/highlight2.mp4"
@@ -327,7 +327,7 @@ export default async function AthleticsPage() {
                     ariaLabel="LAB U training at LABCITY"
                   />
                 </div>
-                <div className="overflow-hidden rounded-xl bg-black">
+                <div className="hidden overflow-hidden rounded-xl bg-black sm:block">
                   <HeroBackgroundVideo
                     className="aspect-square w-full object-cover"
                     src="/videos/little%20kids%20training.mov"
