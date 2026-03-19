@@ -119,10 +119,18 @@ export default function Navbar() {
         {/* Mobile menu */}
         <div className="md:hidden flex items-center gap-3">
           <details className="relative group">
-            <summary className="cursor-pointer list-none rounded-full border border-white/15 bg-black/50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-white/70 transition-colors hover:bg-white/5 hover:text-yellow-300">
-              Menu
+            <summary
+              aria-label="Open navigation menu"
+              className="cursor-pointer list-none rounded-full border border-white/15 bg-black/50 h-10 w-10 flex items-center justify-center transition-colors hover:bg-white/5"
+            >
+              <span className="sr-only">Open menu</span>
+              <span aria-hidden className="relative block h-5 w-6">
+                <span className="absolute left-0 right-0 top-0 h-[2px] bg-white/80 rounded" />
+                <span className="absolute left-0 right-0 top-2 h-[2px] bg-white/80 rounded" />
+                <span className="absolute left-0 right-0 top-4 h-[2px] bg-white/80 rounded" />
+              </span>
             </summary>
-            <div className="absolute left-0 right-0 top-[72px] z-50 w-full overflow-x-hidden">
+            <div className="absolute left-0 right-0 top-[72px] z-50 w-full overflow-x-hidden overflow-hidden">
               <div className="mx-auto w-full max-w-6xl px-4">
                 <div className="rounded-2xl border border-white/10 bg-black/95 p-4 shadow-xl shadow-black/60">
                 <div className="mb-3 flex flex-col gap-2">
