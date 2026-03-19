@@ -2,7 +2,7 @@ export default function HomeBrandValuesSection() {
   return (
     <section className="border-b border-white/10 bg-black py-12 md:py-16">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-yellow-400/90">
+        <p className="text-base font-semibold uppercase tracking-[0.24em] text-yellow-400/90 md:text-lg md:tracking-[0.28em]">
           LAB | Learn • Believe • Achieve
         </p>
         <h2 className="mt-2 max-w-2xl text-2xl font-semibold tracking-tight text-white sm:text-3xl">

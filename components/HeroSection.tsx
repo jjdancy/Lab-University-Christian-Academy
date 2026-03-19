@@ -1,4 +1,5 @@
 import {PLAYBOOK_REGISTER_URL} from "@/lib/constants";
+import HeroBackgroundVideo from "./HeroBackgroundVideo";
 
 export type HeroSectionProps = {
   heroEyebrow?: string;
@@ -56,13 +57,9 @@ export default function HeroSection({
       {/* Background video + gradient overlay */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute inset-0 overflow-hidden">
-          <video
+          <HeroBackgroundVideo
             className="h-full w-full object-cover object-[20%_40%]"
             src="/videos/in%20school%20vid.mov"
-            autoPlay
-            muted
-            loop
-            playsInline
           />
         </div>
         {/* Soft global darkening for readability */}
@@ -74,7 +71,7 @@ export default function HeroSection({
 
       <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 pb-16 pt-20 md:flex-row md:items-center md:gap-14 md:px-6 md:pb-20 md:pt-24">
         <div className="flex-1 space-y-5">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-yellow-300/90">
+          <p className="text-base font-semibold uppercase tracking-[0.28em] text-yellow-300/90 md:text-lg md:tracking-[0.32em]">
             {heroEyebrow}
           </p>
 
