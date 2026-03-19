@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import AdmissionsCTASection from "@/components/AdmissionsCTASection";
 import Footer from "@/components/Footer";
 import MountStaggerReveal from "@/components/MountStaggerReveal";
+import {PLAYBOOK_REGISTER_URL} from "@/lib/constants";
 
 export default function AdmissionsPage() {
   return (
@@ -33,7 +34,9 @@ export default function AdmissionsPage() {
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
-                  href="/admissions#apply"
+                  href={PLAYBOOK_REGISTER_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-full bg-yellow-400 px-7 py-3 text-xs font-semibold uppercase tracking-[0.28em] text-black shadow-lg shadow-yellow-500/30 transition-transform hover:-translate-y-0.5 hover:bg-yellow-300"
                 >
                   Apply Now
@@ -142,7 +145,9 @@ export default function AdmissionsPage() {
               </ol>
               <div className="mt-10 flex flex-wrap gap-4">
                 <a
-                  href="/admissions#apply"
+                  href={PLAYBOOK_REGISTER_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-full bg-yellow-400 px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.28em] text-black transition-transform hover:-translate-y-0.5 hover:bg-yellow-300"
                 >
                   Apply Now

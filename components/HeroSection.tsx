@@ -1,4 +1,53 @@
-export default function HeroSection() {
+import {PLAYBOOK_REGISTER_URL} from "@/lib/constants";
+
+export type HeroSectionProps = {
+  heroEyebrow?: string;
+  headlineHighlight?: string;
+  heroSupportingText?: string;
+
+  scholarshipTitle?: string;
+  scholarshipBody?: string;
+  scholarshipCtaLabel?: string;
+  scholarshipCtaHref?: string;
+
+  applyNowLabel?: string;
+  scheduleTourLabel?: string;
+  applyNowHref?: string;
+  scheduleTourHref?: string;
+
+  k12BadgeMain?: string;
+  k12BadgeSub?: string;
+
+  reviewsBadgeRating?: string;
+  reviewsBadgeLabel?: string;
+
+  enrollmentBadgeText?: string;
+};
+
+export default function HeroSection({
+  heroEyebrow = "Learn • Believe • Achieve",
+  headlineHighlight = "Scholars, Leaders, and Athletes",
+  heroSupportingText =
+    "LAB University Christian Academy in Charlotte, NC is a K–12, Christ-centered private academy that combines a structured college-prep curriculum and the Acellus learning system—with optional Division-1 style basketball for student-athletes. Students are prepared in faith, academics, and leadership for the next level.",
+
+  scholarshipTitle = "NC Opportunity Scholarship",
+  scholarshipBody = "Funding may be available for eligible North Carolina families.",
+  scholarshipCtaLabel = "How to apply →",
+  scholarshipCtaHref = "https://k12.ncseaa.edu/opportunity-scholarship/how-to-apply/",
+
+  applyNowLabel = "Apply Now",
+  scheduleTourLabel = "Schedule a Tour",
+  applyNowHref = PLAYBOOK_REGISTER_URL,
+  scheduleTourHref = "/admissions#tour",
+
+  k12BadgeMain = "K–12",
+  k12BadgeSub = "All grade levels",
+
+  reviewsBadgeRating = "5.0",
+  reviewsBadgeLabel = "Google reviews",
+
+  enrollmentBadgeText = "Now enrolling for 2026–27 school year",
+}: HeroSectionProps) {
   return (
     <section
       className="relative overflow-hidden border-b border-white/10 bg-black"
@@ -26,23 +75,21 @@ export default function HeroSection() {
       <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 pb-16 pt-20 md:flex-row md:items-center md:gap-14 md:px-6 md:pb-20 md:pt-24">
         <div className="flex-1 space-y-5">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-yellow-300/90">
-            Learn • Believe • Achieve
+            {heroEyebrow}
           </p>
 
           {/* NC Opportunity Scholarship — highly visible for parents */}
           <a
-            href="https://k12.ncseaa.edu/opportunity-scholarship/how-to-apply/"
+            href={scholarshipCtaHref}
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col gap-1 rounded-xl border-2 border-yellow-400 bg-yellow-400/15 px-5 py-3 shadow-lg shadow-yellow-500/20 ring-2 ring-yellow-400/30 transition-all hover:bg-yellow-400/25 hover:ring-yellow-400/50"
           >
-            <span className="text-sm font-bold uppercase tracking-wide text-yellow-300">
-              NC Opportunity Scholarship
-            </span>
+            <span className="text-sm font-bold uppercase tracking-wide text-yellow-300">{scholarshipTitle}</span>
             <span className="text-xs font-medium text-white/90">
-              Funding may be available for eligible North Carolina families.{" "}
+              {scholarshipBody}{" "}
               <span className="inline-flex items-center gap-1 font-semibold text-yellow-300 underline decoration-yellow-400/80 underline-offset-2 group-hover:text-yellow-200">
-                How to apply →
+                {scholarshipCtaLabel}
               </span>
             </span>
           </a>
@@ -53,30 +100,26 @@ export default function HeroSection() {
           >
             A Christ-centered academy for{" "}
             <span className="bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">
-              Scholars, Leaders, and Athletes
+              {headlineHighlight}
             </span>
             .
           </h1>
-          <p className="max-w-xl text-sm leading-relaxed text-white/70 md:text-base">
-            LAB University Christian Academy in Charlotte, NC is a K–12,
-            Christ-centered private academy that combines a structured
-            college-prep curriculum and the Acellus learning system—with
-            optional Division-1 style basketball for student-athletes. Students
-            are prepared in faith, academics, and leadership for the next level.
-          </p>
+          <p className="max-w-xl text-sm leading-relaxed text-white/70 md:text-base">{heroSupportingText}</p>
 
           <div className="flex flex-wrap items-center gap-4">
             <a
-              href="/admissions#apply"
+              href={applyNowHref}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full bg-yellow-400 px-7 py-3 text-xs font-semibold uppercase tracking-[0.28em] text-black shadow-lg shadow-yellow-500/30 transition-transform hover:-translate-y-0.5 hover:bg-yellow-300"
             >
-              Apply Now
+              {applyNowLabel}
             </a>
             <a
-              href="/admissions#tour"
+              href={scheduleTourHref}
               className="rounded-full border border-white/25 px-7 py-3 text-xs font-semibold uppercase tracking-[0.28em] text-white/85 transition-colors hover:border-yellow-400 hover:text-yellow-300"
             >
-              Schedule a Tour
+              {scheduleTourLabel}
             </a>
           </div>
 
@@ -92,10 +135,10 @@ export default function HeroSection() {
               </div>
               <div className="flex flex-col items-start leading-tight">
                 <span className="text-sm font-semibold text-white">
-                  K–12
+                  {k12BadgeMain}
                 </span>
                 <span className="text-[0.7rem] uppercase tracking-[0.22em] text-white/70">
-                  All grade levels
+                  {k12BadgeSub}
                 </span>
               </div>
             </div>
@@ -107,16 +150,16 @@ export default function HeroSection() {
               </div>
               <div className="flex flex-col items-start leading-tight">
                 <span className="text-sm font-semibold text-white">
-                  5.0
+                  {reviewsBadgeRating}
                 </span>
                 <span className="text-[0.7rem] uppercase tracking-[0.22em] text-white/70">
-                  Google reviews
+                  {reviewsBadgeLabel}
                 </span>
               </div>
             </div>
 
             <div className="inline-flex items-center rounded-full border border-yellow-400/80 bg-black/60 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-yellow-200 shadow-md shadow-black/40">
-              Now enrolling for 2026–27 school year
+              {enrollmentBadgeText}
             </div>
           </div>
         </div>

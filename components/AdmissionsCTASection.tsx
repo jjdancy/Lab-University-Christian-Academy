@@ -28,7 +28,9 @@ export default function AdmissionsCTASection() {
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
             id="apply"
-            href="/admissions"
+            href="https://labuniversityprep.playbookapi.com/programs/register/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-yellow-400 px-8 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-black shadow-lg shadow-yellow-500/30 transition-transform hover:-translate-y-0.5 hover:bg-yellow-300"
           >
             Apply Now

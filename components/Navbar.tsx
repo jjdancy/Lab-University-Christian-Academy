@@ -5,8 +5,7 @@ const navLinks = [
     href: "/academics",
     items: [
       { label: "Academic Model", href: "/academics" },
-      { label: "Electives", href: "/electives" },
-      { label: "STEM Focus", href: "/academics#stem" },
+      { label: "Electives", href: "/academics#electives" },
       { label: "Acellus Learning", href: "/academics#acellus" },
       { label: "Daily Schedule", href: "/academics#schedule" }
     ]
@@ -30,7 +29,11 @@ const navLinks = [
       { label: "Who It's For", href: "/admissions#who" },
       { label: "FAQs", href: "/admissions#faqs" },
       { label: "Schedule a Tour", href: "/admissions#tour" },
-      { label: "Apply Now", href: "/admissions#apply" }
+      {
+        label: "Apply Now",
+        href:
+          "https://labuniversityprep.playbookapi.com/programs/register/",
+      },
     ]
   }
 ];
@@ -81,6 +84,12 @@ export default function Navbar() {
                             <li key={item.href}>
                               <a
                                 href={item.href}
+                                target={item.href.startsWith("http") ? "_blank" : undefined}
+                                rel={
+                                  item.href.startsWith("http")
+                                    ? "noopener noreferrer"
+                                    : undefined
+                                }
                                 className="block rounded-md px-3 py-2 text-[0.65rem] tracking-[0.18em] transition-colors hover:bg-white/10 hover:text-yellow-300"
                               >
                                 {item.label}
@@ -116,7 +125,9 @@ export default function Navbar() {
             Schedule a Tour
           </a>
           <a
-            href="/admissions#apply"
+            href="https://labuniversityprep.playbookapi.com/programs/register/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-yellow-400 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-black shadow-lg shadow-yellow-500/30 transition-transform hover:-translate-y-0.5 hover:bg-yellow-300"
           >
             Apply Now
