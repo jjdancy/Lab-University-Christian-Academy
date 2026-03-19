@@ -100,8 +100,10 @@ export default function AthleteCommitmentsCarousel({
     const isMobile =
       typeof window !== "undefined" && window.innerWidth <= 640;
 
-    // Mobile was too fast; slow it down significantly.
-    const msPerPixel = isMobile ? 180 : 90;
+    // Mobile + desktop were too fast. We slow to a calmer pace:
+    // - desktop: ~1px every 240ms (~4.2 px/s)
+    // - mobile:  ~1px every 360ms (~2.8 px/s)
+    const msPerPixel = isMobile ? 360 : 240;
     let intervalId: ReturnType<typeof setInterval> | null = null;
     const timeoutId = setTimeout(() => {
       intervalId = setInterval(() => {
