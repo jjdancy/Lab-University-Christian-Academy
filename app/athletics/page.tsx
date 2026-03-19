@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import MountStaggerReveal from "@/components/MountStaggerReveal";
 import AdmissionsCTASection from "@/components/AdmissionsCTASection";
 import AthleteCommitmentsCarousel from "@/components/AthleteCommitmentsCarousel";
+import HeroBackgroundVideo from "@/components/HeroBackgroundVideo";
 import {getHomeAthleteCommitmentsCarousel} from "@/lib/sanity/queries";
 import {urlFor} from "@/lib/sanity/image";
 import {getCoaches} from "@/lib/sanity/coaches";
@@ -202,38 +203,26 @@ export default async function AthleticsPage() {
                 Real moments from our games—the speed, the intensity, and the
                 level of play you can expect when LAB U takes the court.
               </p>
-              <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
+              <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
                 <div className="overflow-hidden rounded-xl bg-black">
-                  <video
+                  <HeroBackgroundVideo
                     className="aspect-[9/16] w-full object-cover"
                     src="/videos/highlight.mp4"
-                    muted
-                    loop
-                    playsInline
-                    autoPlay
-                    aria-label="LAB U highlight 1"
+                    ariaLabel="LAB U highlight 1"
                   />
                 </div>
                 <div className="overflow-hidden rounded-xl bg-black">
-                  <video
+                  <HeroBackgroundVideo
                     className="aspect-[9/16] w-full object-cover"
                     src="/videos/highlight%202.mp4"
-                    muted
-                    loop
-                    playsInline
-                    autoPlay
-                    aria-label="LAB U highlight 2"
+                    ariaLabel="LAB U highlight 2"
                   />
                 </div>
                 <div className="overflow-hidden rounded-xl bg-black">
-                  <video
+                  <HeroBackgroundVideo
                     className="aspect-[9/16] w-full object-cover"
                     src="/videos/highlight2.mp4"
-                    muted
-                    loop
-                    playsInline
-                    autoPlay
-                    aria-label="LAB U highlight 3"
+                    ariaLabel="LAB U highlight 3"
                   />
                 </div>
               </div>
@@ -323,38 +312,26 @@ export default async function AthleticsPage() {
                 Arena-style court, performance center, and shooting lab at
                 LABCITY.
               </p>
-              <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
+              <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3">
                 <div className="overflow-hidden rounded-xl bg-black">
-                  <video
+                  <HeroBackgroundVideo
                     className="aspect-square w-full object-cover object-top"
                     src="/videos/training.mp4"
-                    muted
-                    loop
-                    playsInline
-                    autoPlay
-                    aria-label="LAB U training"
+                    ariaLabel="LAB U training"
                   />
                 </div>
                 <div className="overflow-hidden rounded-xl bg-black">
-                  <video
+                  <HeroBackgroundVideo
                     className="aspect-square w-full object-cover"
                     src="/videos/training3.mp4"
-                    muted
-                    loop
-                    playsInline
-                    autoPlay
-                    aria-label="LAB U training at LABCITY"
+                    ariaLabel="LAB U training at LABCITY"
                   />
                 </div>
                 <div className="overflow-hidden rounded-xl bg-black">
-                  <video
+                  <HeroBackgroundVideo
                     className="aspect-square w-full object-cover"
                     src="/videos/little%20kids%20training.mov"
-                    muted
-                    loop
-                    playsInline
-                    autoPlay
-                    aria-label="LAB U kids training"
+                    ariaLabel="LAB U kids training"
                   />
                 </div>
               </div>

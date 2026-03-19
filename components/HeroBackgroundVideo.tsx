@@ -5,9 +5,11 @@ import {useEffect, useRef} from "react";
 export default function HeroBackgroundVideo({
   src,
   className,
+  ariaLabel,
 }: {
   src: string;
   className?: string;
+  ariaLabel?: string;
 }) {
   const ref = useRef<HTMLVideoElement | null>(null);
 
@@ -53,6 +55,7 @@ export default function HeroBackgroundVideo({
       ref={ref}
       className={className}
       src={src}
+      aria-label={ariaLabel}
       autoPlay
       muted
       loop
