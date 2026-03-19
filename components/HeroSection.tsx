@@ -106,26 +106,26 @@ export default function HeroSection({
           </h1>
           <p className="max-w-xl text-sm leading-relaxed text-white/70 md:text-base">{heroSupportingText}</p>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex items-stretch gap-3 sm:flex-wrap sm:items-center sm:gap-4">
             <a
               href={applyNowHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-yellow-400 px-7 py-3 text-xs font-semibold uppercase tracking-[0.28em] text-black shadow-lg shadow-yellow-500/30 transition-transform hover:-translate-y-0.5 hover:bg-yellow-300"
+              className="flex-1 rounded-full bg-yellow-400 px-4 py-3 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-black shadow-lg shadow-yellow-500/30 transition-transform hover:-translate-y-0.5 hover:bg-yellow-300 sm:flex-none sm:px-7 sm:text-xs sm:tracking-[0.28em]"
             >
               {applyNowLabel}
             </a>
             <a
               href={scheduleTourHref}
-              className="rounded-full border border-white/25 px-7 py-3 text-xs font-semibold uppercase tracking-[0.28em] text-white/85 transition-colors hover:border-yellow-400 hover:text-yellow-300"
+              className="flex-1 rounded-full border border-white/25 px-4 py-3 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-white/85 transition-colors hover:border-yellow-400 hover:text-yellow-300 sm:flex-none sm:px-7 sm:text-xs sm:tracking-[0.28em]"
             >
               {scheduleTourLabel}
             </a>
           </div>
 
-          <div className="mt-6 flex flex-wrap items-center gap-4 text-xs text-white/80">
+          <div className="mt-6 flex flex-wrap items-stretch gap-3 text-xs text-white/80 sm:items-center sm:gap-4">
             {/* K–12 badge */}
-            <div className="inline-flex items-center gap-3 rounded-2xl border border-white/25 bg-black/55 px-4 py-2 shadow-md shadow-black/40">
+            <div className="inline-flex flex-1 items-center gap-3 rounded-2xl border border-white/25 bg-black/55 px-3 py-2 shadow-md shadow-black/40 sm:flex-none sm:px-4">
               <div className="relative flex h-9 w-9 items-center justify-center rounded-xl border border-yellow-300/80 bg-black/40">
                 {/* Open book icon: two pages */}
                 <div className="flex h-5 w-6 items-stretch gap-0.5">
@@ -144,7 +144,7 @@ export default function HeroSection({
             </div>
 
             {/* Reviews badge */}
-            <div className="inline-flex items-center gap-3 rounded-2xl border border-white/25 bg-black/55 px-4 py-2 shadow-md shadow-black/40">
+            <div className="inline-flex flex-1 items-center gap-3 rounded-2xl border border-white/25 bg-black/55 px-3 py-2 shadow-md shadow-black/40 sm:flex-none sm:px-4">
               <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-yellow-300 text-yellow-300">
                 <span className="text-base">★</span>
               </div>
@@ -158,7 +158,7 @@ export default function HeroSection({
               </div>
             </div>
 
-            <div className="inline-flex items-center rounded-full border border-yellow-400/80 bg-black/60 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-yellow-200 shadow-md shadow-black/40">
+            <div className="inline-flex w-full items-center justify-center rounded-full border border-yellow-400/80 bg-black/60 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-yellow-200 shadow-md shadow-black/40 sm:w-auto sm:justify-start">
               {enrollmentBadgeText}
             </div>
           </div>
