@@ -172,17 +172,17 @@ export default async function Home() {
           <HomeAthleticsPreview {...athleticsPreviewProps} />
         </ScrollReveal>
 
-        <ScrollReveal delay={125}>
+        <ScrollReveal delay={150}>
+          <HomeFacilitiesPreview {...facilitiesPreviewProps} />
+        </ScrollReveal>
+
+        <ScrollReveal delay={175}>
           <AthleteCommitmentsCarousel
             key={carouselKey}
             title={cmsTitle}
             subtitle={cmsSubtitle}
             athletes={cmsAthletes}
           />
-        </ScrollReveal>
-
-        <ScrollReveal delay={150}>
-          <HomeFacilitiesPreview {...facilitiesPreviewProps} />
         </ScrollReveal>
 
         <ScrollReveal delay={200}>

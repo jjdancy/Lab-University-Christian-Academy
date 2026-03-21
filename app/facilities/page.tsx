@@ -35,39 +35,68 @@ export default function FacilitiesPage() {
             </div>
           </section>
 
-          {/* 2. LABCITY overview */}
+          {/* 2. Strategic Partnerships */}
           <section className="border-b border-white/10 bg-zinc-950 py-16 md:py-20">
             <div className="mx-auto max-w-6xl px-4 md:px-6">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-yellow-400/90">
-                LABCITY Partnership
+                Partnerships
               </p>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-                A professional environment that mirrors D-1 expectations.
+                Strategic Partnerships
               </h2>
               <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/80">
-                LAB University Christian Academy operates in partnership with the
-                LABCITY Sports Training & Event Center. Students train in facilities
-                designed to support elite basketball development, performance
-                training, skill specialization, and leadership—with the structure
-                and expectations of Division-1 collegiate programs. The entire
-                environment is a professional training atmosphere: discipline,
-                preparation, and measurable growth are reinforced so student-athletes
-                learn to operate at the standard expected at the college level and
-                beyond—on the court, in the weight room, and in the classroom.
+                LAB U partners with mission-aligned organizations to provide
+                students and families with a complete environment for
+                development in academics, athletics, faith, and leadership.
               </p>
-              <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-                {[
-                  "Elite basketball development",
-                  "Athletic performance training",
-                  "Skill specialization",
-                  "Leadership and discipline",
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-white/80">
-                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-yellow-400" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <div className="mt-8 grid gap-5 md:grid-cols-2">
+                <article className="overflow-hidden rounded-2xl border border-white/10 bg-black/55">
+                  <div className="relative aspect-[16/9] border-b border-white/10">
+                    <img
+                      src="/images/labcity%20logo.webp"
+                      alt="LABCITY Sports Training & Event Center"
+                      className="h-full w-full bg-black object-contain object-center p-5"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  </div>
+                  <div className="p-5 md:p-6">
+                    <h3 className="text-lg font-semibold text-yellow-300">
+                      LABCITY Sports Training & Event Center
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-white/80">
+                      LAB U operates in partnership with LABCITY to deliver a
+                      professional training environment that mirrors collegiate
+                      expectations. Students develop through arena-level
+                      facilities, structured performance work, and daily
+                      discipline across athletics and academics.
+                    </p>
+                  </div>
+                </article>
+
+                <article className="overflow-hidden rounded-2xl border border-yellow-500/25 bg-black/55">
+                  <div className="relative aspect-[16/9] border-b border-white/10">
+                    <img
+                      src="/images/have%20life%20church.png"
+                      alt="Have Life Church community partnership with LAB U"
+                      className="h-full w-full bg-black object-contain object-center p-0 scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent" />
+                  </div>
+                  <div className="p-5 md:p-6">
+                    <h3 className="text-lg font-semibold text-yellow-300">
+                      Have Life Church
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-white/80">
+                      LAB U Christian Academy partners with Have Life Church to
+                      support the academic, spiritual, and personal development
+                      of our students. This relationship reflects our commitment
+                      to faith, leadership, and community, providing a strong
+                      foundation where students can grow into confident,
+                      purpose-driven individuals.
+                    </p>
+                  </div>
+                </article>
+              </div>
             </div>
           </section>
 

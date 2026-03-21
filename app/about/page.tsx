@@ -214,53 +214,67 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* 6. Partnership with LABCITY */}
+          {/* 6. Strategic Partnerships */}
           <section className="border-b border-white/10 bg-zinc-950 py-16 md:py-20">
             <div className="mx-auto max-w-6xl px-4 md:px-6">
-              <div className="grid gap-10 md:grid-cols-[1.1fr,1fr] md:items-center md:gap-14">
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-yellow-400/90">
-                    Our Facility
-                  </p>
-                  <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-                    Partnership with LABCITY Sports Training & Event Center
-                  </h2>
-                  <p className="mt-4 text-sm leading-relaxed text-white/80 md:text-base">
-                    LAB University Christian Academy operates out of LABCITY—a
-                    state-of-the-art basketball facility in Charlotte. Students
-                    train and learn in an environment built for elite
-                    development: an arena-style court, sports performance
-                    center, and a shooting room with Dr. Dish technology.
-                  </p>
-                  <p className="mt-4 text-sm leading-relaxed text-white/80">
-                    This partnership means our student-athletes don’t have to
-                    choose between academics and high-level training. Everything
-                    happens under one roof, with the same standards and support
-                    from morning classes through afternoon practice.
-                  </p>
-                  <a
-                    href="/facilities"
-                    className="mt-6 inline-block rounded-full border border-yellow-400/60 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-300 transition-colors hover:bg-yellow-400/10"
-                  >
-                    Explore Our Facilities
-                  </a>
-                </div>
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-yellow-400/90">
+                Partnerships
+              </p>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+                Strategic Partnerships
+              </h2>
+              <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/80">
+                LAB U partners with mission-aligned organizations to strengthen
+                student development in academics, athletics, faith, and
+                leadership.
+              </p>
+
+              <div className="mt-8 grid gap-5 md:grid-cols-2">
+                <article className="overflow-hidden rounded-2xl border border-white/10 bg-black/55">
+                  <div className="relative aspect-[16/9] border-b border-white/10">
                     <img
-                      src="/images/area.jpg"
-                      alt="Arena-style court at LABCITY"
-                      className="h-full w-full object-cover object-center"
+                      src="/images/labcity%20logo.webp"
+                      alt="LABCITY Sports Training & Event Center"
+                      className="h-full w-full bg-black object-contain object-center p-5"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   </div>
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-yellow-500/20">
+                  <div className="p-5 md:p-6">
+                    <h3 className="text-lg font-semibold text-yellow-300">
+                      LABCITY Sports Training & Event Center
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-white/80">
+                      LAB U operates out of LABCITY, providing students with a
+                      professional environment that includes arena-level courts,
+                      performance training resources, and daily structure that
+                      mirrors collegiate expectations.
+                    </p>
+                  </div>
+                </article>
+
+                <article className="overflow-hidden rounded-2xl border border-yellow-500/25 bg-black/55">
+                  <div className="relative aspect-[16/9] border-b border-white/10">
                     <img
-                      src="/images/gym%20facity.png"
-                      alt="LAB U gym and training facility"
-                      className="h-full w-full object-cover object-center"
+                      src="/images/have%20life%20church.png"
+                      alt="Have Life Church community partnership with LAB U"
+                      className="h-full w-full bg-black object-contain object-center p-0 scale-110"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent" />
                   </div>
-                </div>
+                  <div className="p-5 md:p-6">
+                    <h3 className="text-lg font-semibold text-yellow-300">
+                      Have Life Church
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-white/80">
+                      LAB U Christian Academy partners with Have Life Church to
+                      support the academic, spiritual, and personal development
+                      of our students. This relationship reflects our commitment
+                      to faith, leadership, and community, providing a strong
+                      foundation where students can grow into confident,
+                      purpose-driven individuals.
+                    </p>
+                  </div>
+                </article>
               </div>
             </div>
           </section>
