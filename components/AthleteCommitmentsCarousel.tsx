@@ -16,6 +16,7 @@ const DEFAULT_ATHLETES: AthleteCommitment[] = [
   { name: "Christian Aukuso", image: "/images/chris%20commit.jpeg", imageAlt: "Christian Aukuso — LAB U commit" },
   { name: "Esmond Thomas", image: "/images/et%20commit.png", imageAlt: "Esmond Thomas — LAB U commit" },
   { name: "JJ Dancy", image: "/images/Goat%20commit.jpeg", imageAlt: "JJ Dancy — LAB U commit" },
+  { name: "Callie Genece", image: "/images/Callie%20commit.png", imageAlt: "Callie Genece — LAB U commit" },
   { name: "Jalen Clagget", image: "/images/JalenC%20commit.jpeg", imageAlt: "Jalen Clagget — LAB U commit" },
   { name: "Jalen Dancy", image: "/images/jalenD%20commit.jpeg", imageAlt: "Jalen Dancy — LAB U commit" },
   { name: "Kevin Crockett", image: "/images/Kevin%20commit.jpeg", imageAlt: "Kevin Crockett — LAB U commit" },
