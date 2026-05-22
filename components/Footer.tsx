@@ -94,7 +94,7 @@ export default function Footer() {
         </div>
         <div className="space-y-1 text-right md:text-left">
           <p className="text-[0.7rem] uppercase tracking-[0.25em]">
-            Learn • Believe • Achieve
+            Learn • Achieve • Believe
           </p>
           <p className="text-[0.7rem] text-white/50">
             © {new Date().getFullYear()} LAB University Christian Academy. All

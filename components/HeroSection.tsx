@@ -26,7 +26,7 @@ export type HeroSectionProps = {
 };
 
 export default function HeroSection({
-  heroEyebrow = "Learn • Believe • Achieve",
+  heroEyebrow = "Learn • Achieve • Believe",
   headlineHighlight = "Scholars, Leaders, and Athletes",
   heroSupportingText =
     "LAB University Christian Academy in Charlotte, NC is a K–12, Christ-centered private academy that combines a structured college-prep curriculum and the Acellus learning system—with optional Division-1 style basketball for student-athletes. Students are prepared in faith, academics, and leadership for the next level.",
