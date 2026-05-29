@@ -214,7 +214,50 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* 6. Strategic Partnerships */}
+          {/* 6. Graduation & Results */}
+          <section className="border-b border-white/10 bg-zinc-950 py-16 md:py-20">
+            <div className="mx-auto max-w-6xl px-4 md:px-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-yellow-400/90">
+                Results
+              </p>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+                Our students graduate prepared and proven.
+              </h2>
+              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/80">
+                LAB U students cross the stage with diplomas in hand and a
+                foundation built for college, career, and calling. Every
+                graduate represents the product of disciplined academics,
+                elite athletic development, and Christ-centered character
+                formation.
+              </p>
+              <div className="mt-8 grid gap-4 md:grid-cols-2">
+                <div className="relative overflow-hidden rounded-2xl border border-white/10 aspect-[4/3]">
+                  <img
+                    src="/images/graduation%20ceremony.png"
+                    alt="LAB U graduates holding diplomas on stage"
+                    className="h-full w-full object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                  <p className="absolute bottom-4 left-4 right-4 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-300">
+                    LAB U Graduation Ceremony
+                  </p>
+                </div>
+                <div className="relative overflow-hidden rounded-2xl border border-white/10 aspect-[4/3]">
+                  <img
+                    src="/images/graduation%20seated.png"
+                    alt="LAB U graduates seated at commencement ceremony"
+                    className="h-full w-full object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                  <p className="absolute bottom-4 left-4 right-4 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-300">
+                    Class of LAB U
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* 7. Strategic Partnerships */}
           <section className="border-b border-white/10 bg-zinc-950 py-16 md:py-20">
             <div className="mx-auto max-w-6xl px-4 md:px-6">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-yellow-400/90">

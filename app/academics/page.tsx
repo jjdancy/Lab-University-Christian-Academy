@@ -301,6 +301,23 @@ export default async function AcademicsPage() {
                   track performance and study habits—so students remain accountable and successful.
                 </p>
               </div>
+
+              <div className="mt-10 relative overflow-hidden rounded-2xl border border-white/10 aspect-[21/9]">
+                <img
+                  src="/images/graduation%20ceremony.png"
+                  alt="LAB U graduates on stage holding diplomas"
+                  className="h-full w-full object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                <div className="absolute bottom-5 left-5 right-5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.25em] text-yellow-300">
+                    College-Ready Graduates
+                  </p>
+                  <p className="mt-1 text-sm text-white/85">
+                    Our students walk across the stage prepared for the next level—academically and in life.
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
 
